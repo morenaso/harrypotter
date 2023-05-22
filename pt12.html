@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Marxa Senderista</title>
+  <style>
+    /* Estilos CSS para las animaciones */
+    .animate-fade-in {
+      animation: fade-in 1s ease-in-out;
+    }
+    
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .animate-slide-in {
+      animation: slide-in 1s ease-in-out;
+    }
+    
+    @keyframes slide-in {
+      from { transform: translateY(50px); }
+      to { transform: translateY(0); }
+    }
+    
+    .animate-rotate {
+      animation: rotate 2s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Marxa Senderista</h1>
+    <img src="images/banner.jpg" alt="Imatge de la marxa" class="animate-fade-in">
+    <p>Data: 24 i 25 de juny</p>
+    <p>Hora: 9:00</p>
+    <p>Preu: 12€</p>
+  </header>
+
+  <section>
+    <h2>Rutes</h2>
+    <div class="animate-slide-in">
+      <h3>Ruta curta de 16 Km</h3>
+      <img src="images/mapa_curta.jpg" alt="Mapa ruta curta">
+    </div>
+    <div class="animate-slide-in">
+      <h3>Ruta llarga de 25 Km</h3>
+      <img src="images/mapa_llarga.jpg" alt="Mapa ruta llarga">
+    </div>
+  </section>
+
+  <section>
+    <h2>Imatges de la ruta</h2>
+    <div class="animate-rotate">
+      <img src="images/imatge1.jpg" alt="Imatge ruta">
+    </div>
+    <div class="animate-rotate">
+      <img src="images/imatge2.jpg" alt="Imatge ruta">
+    </div>
+    <div class="animate-rotate">
+      <img src="images/imatge3.jpg" alt="Imatge ruta">
+    </div>
+  </section>
+
+  <section>
+    <h2>Menú del dinar popular</h2>
+    <p>Primer plat: Sopa de l'hort</p>
+    <p>Segon plat: Arròs al forn</p>
+    <p>Postres: Flam, iogurt, pastís de xocolata</p>
+    <img src="images/flam.jpg" alt="Imatge flam">
+    <img src="images/iogurt.jpg" alt="Imatge iogurt">
+    <img src="images/pastis.jpg" alt="Imatge pastís">
+  </section>
+
+  <section>
+    <h2>Inscriu-te</h2>
+    <form action="processar_inscripcio.php" method="post">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" required><br>
+
+      <!-- Resto de campos del formulario -->
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2023 Ajuntament del Poble</p>
+  </footer>
+</body>
+</html>
